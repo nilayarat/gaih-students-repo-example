@@ -1,48 +1,45 @@
-#HANGMAN
-importing time module
-import.time
-#wait for 1 second
-time.sleep(1)
+#HANGMAN GAME 
 
-print "Guess!"
-time.sleep(0.5)
+import random
+words = ["leon", "apple", "summer", "banana", "book"]
+guess_number = 5
+characters = [] #this list created to add using letters in case of repeating 
+x = len(word)
+z = list('_' * x)
+print(' '.join(z), end='\n')
 
-#here we set the secret
-word = "flover"
+while guess > 0:
+    y = input("Guess a letter : ")
+    if y in caharacters:
+        print("Alreay used...")
+        continue
+elif len(y) > 1:
+        print("Please enter one letter.")
+        continue
+elif y not in word:   #if giving letter not exist in word
+        guess_number -= 1
+        print("Wrong Guess!. You have {} guess.".format(guess_number))
+else:
+      for i in range(len(word)):
+      if y == word[i]:
+      print("True Guess")
+      z[i] = y
+      characters.append(y)
+      print(' '.join(z), end='\n')
+answer = input("Do you want to guess whole word? ['y' or 'n'] : ")
 
-#creates an variable with an empty value
-guesses = ''
+if answer == "e":
+    guess = input("You can guess whole word : ")
+    if guess == word:
+    print("Congrats!")
 
-#determine the number of turns
-turns = 7
+        break
+ else:
+    guess_number -= 1
+    print("Wrong Guess!. You have {} guess.".format(guess_number))
 
-# Create a while loop
-#check if the turns are more than zero
-while turns > 0: 
-# make a counter that starts with zero
-    failed = 0             
 
-# for every character in flover_word    
-    for char in word:      
+    if guess_number == 0:
+    print("You have no guess.You Lost! The man Hang.")
 
-# see if the character is in the players guess
-        if char in guesses:    
-    
- # print then out the character
-            print char,    
-
-        else:
-# if not found, print a dash
-            print "_", 
-	
-# and increase the failed counter with one
-            failed += 1    
-
-# if failed is equal to zero
-
-# print You Won
-    if failed == 0:        
-        print "You won"  
-# exit the script
-	break
-       
+    break
