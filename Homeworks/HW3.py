@@ -1,4 +1,4 @@
-#HANGMAN GAME 
+#HANGMAN GAME day 5 HOMEWORK
 
 import random
 words = ["leon", "apple", "summer", "banana", "book"]
