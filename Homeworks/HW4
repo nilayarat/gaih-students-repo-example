@@ -1,1 +1,32 @@
+#Homework day4 creating functions with for loop
+
+def prime_num(i)
+def prime_nums = [2,3,5,7]
+if (i =%2)
+print (i*5)
+10
+
+else:
+for i in range (prime_num, i+4)
+prime_num =i
+return (prime_num)
+14 
+
+def prime_sec(i)
+prime_sec =[11,13,17]
+if i <17
+return (i*3)
+
+33
+39
+
+else: 
+return (i**2)
+
+289
+
+
+
+
+
 
