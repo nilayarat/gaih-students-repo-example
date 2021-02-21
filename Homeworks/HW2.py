@@ -1,13 +1,10 @@
-DAY THREE HOMEWORK THAT INCLUDES STUDENTS NOTES 
+#DAY 3 HOMEWORK THAT INCLUDES STUDENTS NOTES 
 
-list_students = { "Nilay":"Arat", "Ebru":"Yazar", "Can":"Oz", "Ezgi":"Orel", "Ay":"Savascisi" }
 info =  { "Nilay":"Arat", "Ebru":"Yazar", "Can":"Oz", "Ezgi":"Orel", "Ay":"Savascisi" }
 
 list_midterm = [50,60,70,80,90]
 list_final = [70,70,80,90,40]
 list_homework = [40,60,50,80,70]
-list_summary = (a+b+c)//3 
-
 print(list_summary) = [53,63,70,83,66]
 
 
